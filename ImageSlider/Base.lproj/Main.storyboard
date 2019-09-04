@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CA1-nl-Ida">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-dd-52p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nte-dd-52p" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="6UE-IS-ueu"/>
+                            <constraint firstItem="Nte-dd-52p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Y3f-jz-Qwg"/>
+                            <constraint firstItem="Nte-dd-52p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ckx-m8-Qyk"/>
+                            <constraint firstItem="Nte-dd-52p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eie-Zi-jSO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="deF-up-fSl"/>
+                    <connections>
+                        <outlet property="imageView" destination="Nte-dd-52p" id="a5p-EV-GGS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="86"/>
+        </scene>
+        <!--Animate Login View Controller-->
+        <scene sceneID="vv8-F0-8vy">
+            <objects>
+                <viewController storyboardIdentifier="AnimateLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H3p-Xe-xed" customClass="AnimateLoginViewController" customModule="ImageSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bBg-lP-9LA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyj-cv-D2r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pyj-cv-D2r" firstAttribute="leading" secondItem="bBg-lP-9LA" secondAttribute="leading" id="5g9-Nw-C6V"/>
+                            <constraint firstAttribute="trailing" secondItem="pyj-cv-D2r" secondAttribute="trailing" id="D0j-pP-r8t"/>
+                            <constraint firstAttribute="bottom" secondItem="pyj-cv-D2r" secondAttribute="bottom" id="l99-Wa-t82"/>
+                            <constraint firstItem="pyj-cv-D2r" firstAttribute="top" secondItem="bBg-lP-9LA" secondAttribute="top" id="v65-G8-eog"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AhX-gN-VLC"/>
+                    </view>
+                    <connections>
+                        <outlet property="MainScrollView" destination="pyj-cv-D2r" id="Tci-NL-ciX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T0-ZZ-ATO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3276" y="86"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="zBx-N3-w3J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CA1-nl-Ida" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="V9k-ON-CdI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AAA-2p-0iu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4p9-dM-EVg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDu-H1-Jyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="86"/>
+        </scene>
+    </scenes>
+</document>
