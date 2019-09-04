@@ -1,10 +1,4 @@
-//
-//  AnimateLoginViewController.swift
-//  ImageSlider
-//
-//  Created by User on 27/05/19.
-//  Copyright © 2019 Heptagon. All rights reserved.
-//
+
 
 import UIKit
 

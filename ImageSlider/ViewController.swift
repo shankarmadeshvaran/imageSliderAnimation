@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  ImageSlider
-//
-//  Created by User on 24/05/19.
-//  Copyright © 2019 Heptagon. All rights reserved.
-//
+
 import UIKit
 
 class ViewController: UIViewController {
